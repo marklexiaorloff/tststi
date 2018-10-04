@@ -57,6 +57,7 @@
         }
         </script>
         <link href="file:///C:/Users/rossi/Documents/LagunalionsFC/tststi/css/style.css"  rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
 <nav>
@@ -86,8 +87,8 @@
     <div class="banner-title">Now open!</div><!-- .banner-title -->
     <p class="banner-description">Welcome to Laguna Lions! We are a newly formed football team, however, our founders come from the original origins of football. Our C.E.O was born in the Sheffield (United Kingdom) of which the first ever football club in the world was formed, Sheffield F.C., 1886. <a href="https://lagunalions.com/about-fc/"><b>Laguna Lions story...</b></a></p><!-- .banner-description --></div>
     <div class="actionButtons">
-        <div class="applyNow">Become a player <img src="https://raw.githubusercontent.com/marklexiaorloff/tststi/master/images/football-shirt.png"></div>
-        <div class="inquiresBtnHm">Request information</div>
+        <div id="applyNow"><span class="btnFrst">Become a player</span> <img src="https://raw.githubusercontent.com/marklexiaorloff/tststi/master/images/football-shirt.png" id="bannerHoverBtn"></div>
+        <div id="inquiresBtnHm"><span class="btnFrst">Request information</span></div>
     </div><!-- .actionButtons -->
     </div><!-- .starting-banner -->
     <div class="wrap">
@@ -169,6 +170,15 @@
        $('nav ul').slideUp(500);
        });
        </script>
+
+<script>
+ $("#applyNow").hover(function(){     
+        $("#bannerHoverBtn").addClass("hoverBtnIcon");    
+    },     
+    function(){    
+        $("#bannerHoverBtn").removeClass("hoverBtnIcon");     
+    });
+</script>
 
 </body>
 </html>
