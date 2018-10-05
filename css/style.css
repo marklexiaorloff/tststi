@@ -1,10 +1,12 @@
 body{margin: 0;font-family: sans-serif;}
+p a{color: white;text-decoration: none;}
 
 /* Navigation */
 
 nav {width: 100%;background-color:#cd050d;height: 10vh;padding-top: 2vh;border-bottom: 2px solid #7b8998;display: table;position: fixed;z-index: 99999;}
 nav ul{display: table-cell;}
-nav ul li {display:inline-block;line-height: 3.4;font-size: 1.1rem;}
+nav ul li {display:inline-block;line-height: 3.4;font-size: 1.1rem;transition: 1s;}
+nav ul li:hover{    background: #b6060e;transition: 1s;}
 nav a {color:#fff !important;display:block;text-decoration: none;padding: 0vh 4vh;}
 .menuHamb {display:none;color:#F8ECC2;} 
 .triggerHamb{color: #fff;border: 1.5px solid #fff;margin: 4px;display: block;width: 20px;}
@@ -389,7 +391,7 @@ iframe {border: 3px solid #fff !important;width: 33.3%;height: 220px;}
 /*Starting banner*/
 .starting-banner{background-image: url('https://lh3.googleusercontent.com/m6J_5Lez2cSJSoM2BuQUqClwpm8WmblrU9FuQkSHsDK9sZ9Uc_sxaFmPjyMBzgYnQYM0KuRx6A99jHU9qEbRwUlwO2qBx3odj8xt87Kyi3cXZc0T0ZvYrEx4XuvetCI9SURZzpm30a2OH-1PKHwklj7WL_UIO2ecfMYCNPoktg5O70Ya47egOIgDXbd6-Bs35Nr6E8zR_iYB3cHcBcxsehcq3A0djyneEs35gBf6ykvRYDejOShcq8ani89H-rd8rTZ5z1rdIciNN7uRV7KIRmbbaKTzW6EH5jVE_LEmhy3AbzlZM_sK8TBKXzGlB06py9uq8hZy1tR8Siirgx9YZlKE7SxXts8KFIX7gpEHYfzVZFyloNReJIy2zqCeA2C9SmqsXGNT9B4MQuhhQQWb6wdq5gblHoWVEVNiUE_23-7uTYq3qz48rabAxrEQlDHp66NIJIhbHDYgFXgpBSO7wIMQU9YjMYDogvZ4Rmte73-lSklADtSFZx5V8IYg6XyQJXRpMjd16x2w23LV9c5pyPtyoxJKy7I1yO1QTnaGcwtxmpNLboDFb6N8-7a5TmVqhag8LS7mZOs_P79olqbXAXGbJbkXRIDU_SnlScW_yo6ZL6ProEMPwPGe38sO44fpslKOdhN1siRF9AQuxHf6TFS1e11k-2lE2REvqtA13vuRByPQxONS4qAS=w1366-h624-no');float: left;width: 100%;height: 100vh;background-position: top;background-repeat: no-repeat;}
 .containerBanner{background: #0b0c0dc4;width: 65vh;display: table;float: right;margin-right: 5vh;margin-top: 25vh;padding: 4vh;border-top: 2px solid #cd050d;clip-path: polygon(0% 100%, 15% 0%, 100% 0%, 100% 100%);}
-.banner-title{color: #fff;font-size: 6vh;width: 63vh;padding-top: 5vh;margin-left: 10vh;}
+.banner-title{color: #e9e4e4;font-size: 6vh;width: 63vh;padding-top: 5vh;margin-left: 10vh;}
 .banner-subtitle{position: absolute;font-size: 2rem;color: #fff;text-transform: uppercase;margin-top: 14%;padding: 2%;width: 100%;text-align: center;
 text-shadow: black 1px 2px 4px;}
 .banner-description{color: #fff;width: 60vh;padding-top: 2vh;padding-bottom: 2vh;font-size: 1rem;margin-left: 10vh;}
@@ -399,8 +401,11 @@ text-shadow: black 1px 2px 4px;}
 float: left;margin-right: 2vh;padding-left: 2vh;box-shadow: 2px 1px 0px 1px red;transition:1s;cursor:pointer;}
 .hoverBtnIcon{transition:1s;transform:rotateY(180deg);}
 #bannerHoverBtn{transition:1s;}
+#bannerHoverBtn2{transition:1s;}
 #inquiresBtnHm{background: #0b0c0df7;padding: 1vh;display: table-cell;color: #fff;font-weight: 600;float: left;padding-left: 2vh;box-shadow: 2px 1px 0px 1px red;transition:1s;cursor:pointer;}
 .btnFrst{vertical-align: super;padding-right: 2vh;}
+.fcllStoryBtn{background: #cd050d;padding: 1vh;width: 25vh;float: right;}
+.channelsIcon{width:32px;}
 
 /*Partners block*/
 
