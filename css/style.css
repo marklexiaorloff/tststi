@@ -397,26 +397,11 @@ iframe {width: 64vh;height: 220px;float: left;}
 .vidContent2{width: 33%;display: table-cell;}
 .category-news-grey-position iframe{width:800px !important;height:450px !important;}
 
-#featuredNews {display: flex;height: 466px;text-size-adjust: 100%;width: 1190px;perspective-origin: 595px 237.5px;transform-origin: 595px 237.5px;user-select: text;font: normal normal 400 normal 16px / normal sans-serif;
-    padding: 9px 0px 0px;}
-    #FNfeaturedImg{bottom: 0px;color: rgb(0, 0, 238);cursor: pointer;display: flex;height: 466px;left: 0px;position: relative;right: 0px;text-align: center;text-decoration: none solid rgb(0, 0, 238);text-size-adjust: 100%;top: 0px;width: 830px;column-rule-color: rgb(0, 0, 238);align-items: center;justify-content: center;perspective-origin: 415px 233px;transform-origin: 415px 233px;user-select: text;caret-color: rgb(0, 0, 238);background: rgb(240, 240, 240) none repeat scroll 0% 0% / auto padding-box border-box;border: 0px none rgb(0, 0, 238);flex-flow: row wrap;font: normal normal 400 normal 16px / normal sans-serif;outline: rgb(0, 0, 238) none 0px;}
-    .customFNImg{color: rgb(0, 0, 238);cursor: pointer;display: block;height: 466px;max-height: 100%;max-width: 100%;min-height: 10%;min-width: 10%;text-align: center;text-decoration: none solid rgb(0, 0, 238);text-size-adjust: 100%;width: 830px;column-rule-color: rgb(0, 0, 238);perspective-origin: 415px 233px;transform-origin: 415px 233px;user-select: text;caret-color: rgb(0, 0, 238);border: 0px none rgb(0, 0, 238);font: normal normal 400 normal 16px / normal sans-serif;outline: rgb(0, 0, 238) none 0px;}
-    #FNrightBlock{color: rgb(255, 255, 255);display: flex;height: 432px;min-height: auto;min-width: auto;text-decoration: none solid rgb(255, 255, 255);text-size-adjust: 100%;width: 320px;
-    column-rule-color: rgb(255, 255, 255);perspective-origin: 180px 233px;transform-origin: 180px 233px;user-select: text;caret-color: rgb(255, 255, 255);background: rgb(51, 51, 51) none repeat scroll 0% 0% / auto padding-box border-box;border: 0px none rgb(255, 255, 255);flex-flow: column wrap;font: normal normal 400 normal 16px / normal sans-serif;outline: rgb(255, 255, 255) none 0px;padding: 14px 20px 20px;}
-    #FNrightTitle{color: rgb(255, 255, 255);height: 84px;min-height: auto;min-width: auto;overflow-wrap: break-word;
-        text-decoration: none solid rgb(255, 255, 255);
-        text-size-adjust: 100%;
-        width: 320px;
-        word-break: break-word;
-        column-rule-color: rgb(255, 255, 255);
-        perspective-origin: 160px 42px;
-        transform-origin: 160px 42px;
-        user-select: text;
-        caret-color: rgb(255, 255, 255);
-        border: 0px none rgb(255, 255, 255);
-        font: normal normal 400 normal 24px / normal RenaultCondensedBold, RenaultCondensedBoldCyrillic, Arial, Helvetica, sans-serif;
-        margin: 0px 0px 3px;
-        outline: rgb(255, 255, 255) none 0px;}
+#featuredNews {display: flex;height: 466px;width: 100%;padding: 9px 0px 0px;}
+#FNfeaturedImg{cursor: pointer;width: 64%;}
+.customFNImg{color: rgb(0, 0, 238);cursor: pointer;display: block;height: 466px;max-height: 100%;max-width: 100%;min-height: 10%;min-width: 10%;text-align: center;text-decoration: none solid rgb(0, 0, 238);text-size-adjust: 100%;width: 830px;column-rule-color: rgb(0, 0, 238);perspective-origin: 415px 233px;transform-origin: 415px 233px;user-select: text;caret-color: rgb(0, 0, 238);border: 0px none rgb(0, 0, 238);font: normal normal 400 normal 16px / normal sans-serif;outline: rgb(0, 0, 238) none 0px;}
+#FNrightBlock{color: aliceblue;display: flex;width: 32.7%;background: rgb(51, 51, 51) none repeat scroll 0% 0% / auto padding-box border-box;flex-flow: column wrap;padding: 14px 20px 20px;}
+#FNrightTitle{height: 84px;width: auto;}
     #FNTitleText{color: rgb(255, 255, 255);
         overflow-wrap: break-word;
         text-decoration: none solid rgb(255, 255, 255);
@@ -431,68 +416,8 @@ iframe {width: 64vh;height: 220px;float: left;}
         font: normal normal 400 normal 24px / normal RenaultCondensedBold, RenaultCondensedBoldCyrillic, Arial, Helvetica, sans-serif;
         margin: 0px 0px 3px;
         outline: rgb(255, 255, 255) none 0px;}
-    #FNrightDate{color: rgb(204, 204, 204);height: 18px;width: 320px;margin-bottom: 5vh;font-size: 0.8rem;margin-top: 6vh;}
-    #FNrightLabel{    color: rgb(255, 255, 255);
-        height: 30px;
-        min-height: auto;
-        min-width: auto;
-        text-decoration: none solid rgb(255, 255, 255);
-        text-size-adjust: 100%;
-        width: 320px;
-        column-rule-color: rgb(255, 255, 255);
-        perspective-origin: 160px 15px;
-        transform-origin: 160px 15px;
-        user-select: text;
-        caret-color: rgb(255, 255, 255);
-        border: 0px none rgb(255, 255, 255);
-        font: normal normal 400 normal 16px / normal sans-serif;
-        outline: rgb(255, 255, 255) none 0px;}
-    #FNrightLabel ul{color: rgb(255, 255, 255);
-        display: flex;
-        height: 30px;
-        text-decoration: none solid rgb(255, 255, 255);
-        text-size-adjust: 100%;
-        width: 320px;
-        column-rule-color: rgb(255, 255, 255);
-        perspective-origin: 160px 15px;
-        transform-origin: 160px 15px;
-        user-select: text;
-        caret-color: rgb(255, 255, 255);
-        border: 0px none rgb(255, 255, 255);
-        flex-flow: row wrap;
-        font: normal normal 400 normal 16px / normal sans-serif;
-        list-style: none outside none;
-        margin: 0px;
-        outline: rgb(255, 255, 255) none 0px;
-        padding: 0px;}
-    #FNrightLabel ul li{color: rgb(255, 255, 255);
-        height: 30px;
-        min-height: auto;
-        min-width: auto;
-        text-decoration: none solid rgb(255, 255, 255);
-        text-size-adjust: 100%;
-        width: 124.391px;
-        column-rule-color: rgb(255, 255, 255);
-        perspective-origin: 62.1875px 15px;
-        transform-origin: 62.1875px 15px;
-        user-select: text;
-        caret-color: rgb(255, 255, 255);
-        border: 0px none rgb(255, 255, 255);
-        font: normal normal 400 normal 16px / normal sans-serif;
-        list-style: none outside none;
-        outline: rgb(255, 255, 255) none 0px;}
-    #FNrightLabel ul li a{color: rgb(0, 0, 0);
-        display: inline-block;
-        height: 20px;
-        text-align: left;
-        text-decoration: none;
-        width: 42vh;
-        background: rgb(204, 204, 204) none repeat scroll 0% 0% / auto padding-box border-box;
-        font-size: 0.8rem;
-        line-height: 1.5;
-        padding: 0.2vh;
-        padding-left: 1vh;}
-    #FNrightDesc{height: auto;margin-top: 5vh;font-size: 0.9rem;}
+    #FNrightDate{color: rgb(204, 204, 204);height: 18px;width: 320px;margin-bottom: 5vh;font-size: 0.8rem;margin-top: 1vh;}
+    #FNrightDesc{height: auto;margin-top:10vh;font-size: 1rem;}
 
 
 /*Links*/
