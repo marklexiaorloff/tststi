@@ -27,7 +27,7 @@
 body{margin: 0;font-family: sans-serif;font-family:"Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;}
 a{text-decoration: none;}
 p a{color: white;text-decoration: none;}
-nav {background: #cd050d;line-height:3;width: 100%;height: 6vh;display: table;z-index: 99999;position: absolute;}
+nav {background: #cd050d;line-height:3;width: 100%;height: 6vh;display: table;z-index: 99999;position: fixed;}
 nav ul{display: flex;min-width: 681px;text-align: right;float: right;}
 nav ul li {display:inline-block;font-size: 1.1rem;transition: 1s;}
 nav a {color:#e5e4e4 !important;display:block;text-decoration: none;padding: 0vh 4vh;}
@@ -52,7 +52,7 @@ nav ul {background:linear-gradient(to bottom, #cd050d, #000 80%);display: none;z
 
 .newsNavigation{margin-bottom: 20%;display: block;}
 .newsLeftSidebarCont{float:left;width: 25%;height: 100vh;position:fixed;border-right: 1px solid #ccc;background: linear-gradient(to bottom, #cd050d 30%, black);color: #fff;}
-.newsSidebarStaticBlock{bottom: 5%;position: absolute;margin-left: 12%;display: block;float: left;width: 80%;}
+.newsSidebarStaticBlock{top:30vh;position: absolute;margin-left: 12%;display: block;float: left;width: 80%;}
 #itemTUTEN{border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;padding-bottom: 5%;
 padding-top: 6%;padding-left: 7%;font-weight: 600;}
 #itemTUTWENTY,#itemEVENTS,#itemFANNEWS,#itemPRESS,#itemFCFRIENDS{border-bottom: 1px solid #ccc;
