@@ -52,9 +52,7 @@ nav ul {background:linear-gradient(to bottom, #cd050d, #000 80%);display: none;z
 .AboutNavigation{margin-bottom: 20%;display: block;}
 .AboutLeftSidebarCont{float:left;width: 25%;height: 180vh;position:fixed;border-right: 1px solid #ccc;background: linear-gradient(to bottom, #cd050d 30%, black);color: #fff;transition:1s;}
 .AboutSidebarStaticBlock{transition:1s;top: 16vh;position: absolute;margin-left: 12%;display: block;float: left;width: 80%;}
-#itemTUTEN{border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;padding-bottom: 5%;
-padding-top: 6%;padding-left: 7%;font-weight: 600;}
-#itemTUTWENTY,#itemEVENTS,#itemFANNEWS{border-bottom: 1px solid #ccc;
+#itemKITAVAILABLE,#itemFOOTBALLFUTURE,#itemOPENDAY{border-bottom: 1px solid #ccc;
 padding-bottom: 5%;margin-block-start: 0;padding-left: 7%;font-weight: 600;}
 .partnersCont{text-align:center;display:block;width:100%;}
 .partnersLogo{padding: 1%;width: 100px;max-height: 36px;min-height: 36px;}
@@ -109,10 +107,9 @@ iframe{width: 100%;height: 70vh;margin-bottom: 10%;}
   <div class="AboutSidebarStaticBlock">
   <div class="AboutNavigation">
   <h2>Latest News</h2>
-  <p id="itemTUTEN">Laguna Lions F.C. and Football for Humanity Organization define common goals</p>
-  <p id="itemTUTWENTY">Is available now the official kit for players of all ages</p>
-  <p id="itemEVENTS">It is your time to create a great football future</p>
-  <p id="itemFANNEWS">Laguna Lions F.C. open day</p>
+  <p id="itemKITAVAILABLE">Is available now the official kit for players of all ages</p>
+  <p id="itemFOOTBALLFUTURE">It is your time to create a great football future</p>
+  <p id="itemOPENDAY">Laguna Lions F.C. open day</p>
   </div>
   <div class="AboutFcllFriends">
   <p class="partnersTitle">In cooperation with</p>
@@ -205,7 +202,7 @@ iframe{width: 100%;height: 70vh;margin-bottom: 10%;}
 $(function(){
   $(window).scroll(function(e) {
     if($(this).scrollTop()>700){
-      $(".AboutLeftSidebarCont").css({"position": "relative","height": "180vh"});
+      $(".AboutLeftSidebarCont").css({"position": "relative","height": "250vh"});
       $(".fclllogoImg").css("width", "65px");
     }
     else{
