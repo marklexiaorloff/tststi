@@ -76,6 +76,7 @@ nav a {color:#e5e4e4 !important;display:block;text-decoration: none;padding: 0vh
 .logo{display: table-cell;position: absolute;top: 1vh;}
 .fclllogoImg{width:160px;}
 .site-title{display: table-cell;font-size: 2rem;margin-left: 175px;font-weight: 600;text-shadow: 0px 1px #0f0f0f;text-transform: uppercase;color: #f1f1f1;width: 309px;position: absolute;line-height: 6rem;font-family:sans-serif;max-width: 35%;min-width: 35%;}
+.toggleOpenForHeader{position:fixed;background:#cd050d;height:100%;}
 
 /*Float Buttons*/
 
@@ -318,11 +319,11 @@ height: 250px;z-index: 1;display: block;position: absolute;opacity: 0.2;margin-l
 margin-right: auto;left: 0;right: 0;}
 
 @media screen and (max-width:1360px) {
-nav{padding-top: 2.5%;padding-bottom: 2%;line-height:0;height: 4vh !important;}
+nav{padding-top: 2.5%;padding-bottom: 2%;line-height:0;height: 4vh;}
 nav a{display: inline-flex;width: auto;padding: 0;}
 .menuHamb {float: right;display:inline-block;margin-right: 5%;}
 nav ul li {display:block;border-top:1px #7c8a9a solid;width: 80%;line-height:3;margin-right: 15%;float:right;font-size: 1.5rem;}
-nav ul {background:linear-gradient(to bottom, #cd050d, #000 80%);display: none;z-index: 99999;position: absolute;margin-block-start: 0;width: 100%;height:100%;text-align: center;top: 11%;}
+nav ul {background:linear-gradient(to bottom, #cd050d, #000 80%);display: none;z-index: 99999;position: fixed;margin-block-start: 0;width: 100%;height:100%;text-align: center;top: 11%;}
 .resizeMenu{width:100%;display: table;text-align: center;}
 .fclllogoImg{width:11vh;}
 .site-title{font-size: 2rem;line-height:1;text-shadow: 1px 1px #161515;margin-left:0;width:80%;max-width: unset;min-width: auto;left: 0;margin-left: 12%;}
@@ -830,7 +831,7 @@ blockquote.twitterTweet{width:90%;margin-top: 5%;}
 </script>
 
     <script>
-        $('.triggerHamb').click(function() {
+        $('.menuHamb').click(function() {
            $('nav ul').slideToggle(500);
        });
        
@@ -839,10 +840,6 @@ blockquote.twitterTweet{width:90%;margin-top: 5%;}
                    $('nav ul').removeAttr('style');
                 }
            });
-       
-       $('.solutions-block').click(function() {
-       $('nav ul').slideUp(500);
-       });
        </script>
 
 <script>
