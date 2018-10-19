@@ -57,6 +57,7 @@
         </script>
 </head>
 <style>
+@media(min-width:1200px){
 body{margin: 0;font-family: sans-serif;font-family:"Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;}
 a{text-decoration: none;}
 p a{color: white;text-decoration: none;}
@@ -75,17 +76,6 @@ nav a {color:#e5e4e4 !important;display:block;text-decoration: none;padding: 0vh
 .logo{display: table-cell;position: absolute;top: 1vh;}
 .fclllogoImg{width:160px;}
 .site-title{display: table-cell;font-size: 5vh;margin-left: 175px;font-weight: 600;text-shadow: 0px 1px #0f0f0f;text-transform: uppercase;color: #f1f1f1;width: 309px;position: absolute;line-height: 3;font-family:sans-serif;}
-@media screen and (max-width:1200px) {
-nav{padding-top: 2.5%;padding-bottom: 2%;line-height:0;height: 4vh !important;margin-top: 4vh;}
-nav a{display: inline-flex;width: auto;padding: 0;}
-.menuHamb {float: left;margin-left: 2vh;margin-right: -6vh;}
-nav ul li {display:block;border-top:1px #7c8a9a solid;width: 80%;line-height:3;margin-right: 15%;float:right;}
-nav ul {background: rgb(60, 59, 59);display: none;z-index: 99999;position: absolute;margin-block-start: 0;height: 100%;width: 100%;}
-.resizeMenu{width:100%;display: table;text-align: center;}
-.fclllogoImg{width:11vh;}
-.site-title{font-size: 1.1rem;line-height:1.6;text-shadow: 1px 1px #161515;}
-.logo{margin-top: 0;margin-right: 1vh;}
-.liFirst{border-top: 2px solid white;margin-top: 1vh;}}
 
 /*Float Buttons*/
 
@@ -323,7 +313,20 @@ footer{display: block;min-height: 272px;background-position: center;background-r
 #footerMenu li a{color:#fff;}
 .logoBackgr{background-image: url(https://lagunalions.com/wp-content/uploads/2018/09/laguna-lions-fc-logo-1.png);width: 260px;
 height: 250px;z-index: 1;display: block;position: absolute;opacity: 0.2;margin-left: auto;
-margin-right: auto;left: 0;right: 0;}
+margin-right: auto;left: 0;right: 0;}}
+
+@media screen and (max-width:1200px) {
+nav{padding-top: 2.5%;padding-bottom: 2%;line-height:0;height: 4vh !important;margin-top: 4vh;}
+nav a{display: inline-flex;width: auto;padding: 0;}
+.menuHamb {float: left;margin-left: 2vh;margin-right: -6vh;}
+nav ul li {display:block;border-top:1px #7c8a9a solid;width: 80%;line-height:3;margin-right: 15%;float:right;}
+nav ul {background: rgb(60, 59, 59);display: none;z-index: 99999;position: absolute;margin-block-start: 0;height: 100%;width: 100%;}
+.resizeMenu{width:100%;display: table;text-align: center;}
+.fclllogoImg{width:11vh;}
+.site-title{font-size: 1.1rem;line-height:1.6;text-shadow: 1px 1px #161515;}
+.logo{margin-top: 0;margin-right: 1vh;}
+.liFirst{border-top: 2px solid white;margin-top: 1vh;}}
+
 @media(min-width:1600px){
 .site-title{width: 35%;line-height: 2;}
 }
