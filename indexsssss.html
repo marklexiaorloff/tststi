@@ -61,7 +61,7 @@
 body{margin: 0;font-family: sans-serif;font-family:"Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;}
 a{text-decoration: none;}
 p a{color: white;text-decoration: none;}
-.wrapperPageGlb{margin-left: 3%;margin-right: 3%;float: left;margin-top:10%;}
+.wrapperPageGlb{margin-left: 3%;margin-right: 3%;float: left;margin-top:7%;}
 .wrapperPageGlbSnd{margin-left: 3%;margin-right: 3%;}
 
 /* Navigation */
@@ -116,18 +116,17 @@ padding: 1%;position: absolute;height: 33px;right: 0;border-radius: 5px;line-hei
 .homeFirstRow img{height: 250px;width: auto;object-fit: cover;float: left;border: 3px solid white;flex-grow:7;object-position:top;}
 .homeFirstRow a{display: flex;flex-grow: 7;}
 .homeHighlights{float: left;padding-left: 3%;padding-right: 3%;background: #292a2a;margin-top: 3%;}
-.highlightsHomeTitle,.highlightsHomeTitle2,.highlightsHomeTitleNews,.videoHomeTitle{position: relative;float: left;width: 100%;}
+.highlightsHomeTitle,.highlightsHomeTitle2,.highlightsHomeTitleNews,.videoHomeTitle{position: relative;float: left;width: 100%;display:flex;}
 .highlightsHomeTitle h2{font-family:sans-serif;font-size: 3.5rem;text-transform: uppercase;font-weight: 600;letter-spacing: 1px;width: 50%;float: left;margin-bottom: 2%;max-width:634px;  background-color: #565656;color: transparent;text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
 -webkit-background-clip: text;-moz-background-clip: text;background-clip: text;}
-.highlightsHomeTitleNews h2{font-family:sans-serif;font-size: 3.5rem;text-transform: uppercase;font-weight: 600;letter-spacing: 1px;width: 50%;float: left;margin-bottom: 2%;  background-color: #565656;color: transparent;text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+.highlightsHomeTitleNews h2{font-family:sans-serif;font-size: 3.5rem;text-transform: uppercase;font-weight: 600;letter-spacing: 1px;width: 641px;min-width:641px;max-width:641px;float: left;margin-bottom: 2%;  background-color: #565656;color: transparent;text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
 -webkit-background-clip: text;-moz-background-clip: text;background-clip: text;}
 .videoHomeTitle h2{font-family:sans-serif;font-size: 3.5rem;text-transform: uppercase;font-weight: 600;letter-spacing: 1px;width:15%;float: left;margin-bottom: 2%;max-width:634px;  background-color: #565656;color: transparent;text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
 -webkit-background-clip: text;-moz-background-clip: text;background-clip: text;}
-.highlightsHomeTitle2 h2{font-family:sans-serif;font-size: 3.5rem;text-transform: uppercase;font-weight: 600;letter-spacing: 1px;width: 34%;float: left;margin-bottom: 2%;background-color: #fff;color: transparent;text-shadow: 1px -1px rgba(0, 0, 0, .2);
--webkit-background-clip: text;-moz-background-clip: text;background-clip: text;}
+.highlightsHomeTitle2 h2{font-family:sans-serif;font-size: 3.5rem;text-transform: uppercase;font-weight: 600;letter-spacing: 1px;width: 770px;min-width:770px;max-width:770px;float: left;margin-bottom: 2%;background-color: #fff;color: transparent;text-shadow: 1px -1px rgba(0, 0, 0, .2);-webkit-background-clip: text;-moz-background-clip: text;background-clip: text;}
 .highlightsHomeTitle::after{content: '';width: 53%;border-bottom: 2px solid #ccc;height: 96px;display: inline-block;vertical-align: bottom;}
-.highlightsHomeTitleNews::after{content: '';width: 49%;border-bottom: 2px solid #ccc;height: 96px;display: inline-block;vertical-align: bottom;}
-.highlightsHomeTitle2::after{content: '';width: 53%;border-bottom: 2px solid #ccc;height: 96px;display: inline-block;vertical-align: bottom;}
+.highlightsHomeTitleNews::after{content: '';width: 49%;border-bottom: 2px solid #ccc;height: 96px;display: inline-block;vertical-align: bottom;display:flex;}
+.highlightsHomeTitle2::after{    content: '';width: -webkit-fill-available;border-bottom: 2px solid #ccc;height: 96px;display: flex;vertical-align: bottom;margin-right: 1%;}
 .videoHomeTitle::after{content: '';width: 85%;border-bottom: 2px solid #ccc;height: 96px;display: inline-block;vertical-align: bottom;}
 .homeVidShare{text-align: right;}
 .homeVidShare svg{width:20px;height:20px;}
@@ -151,6 +150,7 @@ width: 100%;background-color: rgba(0, 0, 0, 0.85);cursor: pointer;}
 .Modal-close {position: absolute;top: 0;right: 0;z-index: 9001;padding: 5px 10px;color: #fff;
 font-size: 16px;line-height: 1;text-transform: uppercase;background-color: rgba(0, 0, 0, 0.85);}
 .Modal-cancel-overflow {overflow: hidden;}
+.homeVidThumbnail{width:100%;}
 #homeVideoBlock{float:left;width: 100%;}
 .homeSVidPlaySvg{width: 50px;height: 50px;background: #cd050d;border-radius: 50%;    transition: 1s;}
 .homeSVidPlaySvg image{x:19px;y:15px;}
@@ -332,18 +332,10 @@ nav ul {background: rgb(60, 59, 59);display: none;z-index: 99999;position: absol
 
 @media(min-width:1440px) and (max-width:1599px){
 .starting-banner::after{margin-top: 0;}
-.highlightsHomeTitle2::after{width:53%;}
 .homeVidSvgCont img{width:100%;}
 blockquote.twitterTweet{width:90%;margin-top: 5%;}
 .homeVidDesc::before{width: 46%;margin-top: -6.9rem;}
 .TwitterVidThumbnail{width:100%;}
-.highlightsHomeTitle2 h2{width:46%;}
-.highlightsHomeTitleNews::after{width:51%;}
-}
-
-@media(max-width:1439px){
-.highlightsHomeTitle2 h2{width:50%;}
-.highlightsHomeTitle2::after{width:49%;}
 }
 
 @media(min-width:1280px) and (max-width:1365px){
@@ -357,14 +349,7 @@ blockquote.twitterTweet{width:90%;margin-top: 5%;}
 }
 
 @media(min-width:1600px) and (max-width:1919px){
-.highlightsHomeTitle2::after{width:59%;}
-.highlightsHomeTitle2 h2{width:40%;}
 .site-title{width: 35%;line-height: 2;}
-.highlightsHomeTitleNews::after{width:56%;}
-}
-
-@media(min-width:1920px){
-.highlightsHomeTitle2::after{width:65%;}
 }
 
 </style>
