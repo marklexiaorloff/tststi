@@ -9,8 +9,9 @@
 </head>
 <body>
 <style>
-body{margin: 0;font-family: sans-serif;}
+body{margin: 0;font-family: sans-serif;font-family:"Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;}
 a{text-decoration: none;}
+p a{color: white;text-decoration: none;}
 nav {background: #cd050d;line-height:3;width: 100%;height: 6vh;display: table;z-index: 99999;position: fixed;}
 nav ul{display: flex;min-width: 681px;text-align: right;float: right;}
 nav ul li {display:inline-block;font-size: 1.1rem;transition: 1s;}
@@ -18,8 +19,8 @@ nav a {color:#e5e4e4 !important;display:block;text-decoration: none;padding: 0vh
 .menuHamb {display:none;color:#F8ECC2;} 
 .triggerHamb{color: #fff;border: 1.5px solid #fff;margin: 4px;display: block;width: 20px;}
 .logo{display: table-cell;position: absolute;top: 1vh;}
-.fclllogoImg{width:100px;transition:1s;}
-.site-title{display: table-cell;font-size: 2rem;margin-left: 125px;font-weight: 600;text-shadow: 0px 1px #0f0f0f;text-transform: uppercase;color: #f1f1f1;width: 309px;position: absolute;line-height: 3;font-family:sans-serif;max-width: 35%;min-width: 35%;}
+.fclllogoImg{width:75px;transition:1s;}
+.site-title{display: table-cell;font-size: 2rem;margin-left: 125px;font-weight: 600;text-shadow: 0px 1px #0f0f0f;text-transform: uppercase;color: #f1f1f1;width: 309px;position: absolute;line-height: 2.8;font-family:sans-serif;max-width: 35%;min-width: 35%;}
 .toggleHeaderFixed{background:#cd050d;height: 100vh;position:fixed;}
 @media screen and (max-width:1360px) {
 nav{padding-top: 2.5%;padding-bottom: 2%;line-height:0;height: 6vh;}
@@ -33,13 +34,13 @@ nav ul {background:linear-gradient(to bottom, #cd050d, #000 80%);display: none;z
 .logo{margin-top: 0;margin-right: 1vh;left: 2%;z-index: 999999;}
 .liFirst{border-top: 2px solid white;margin-top: 1vh;}}
 
-#contactPage{background:#292a2a;width: 100%;height: 100%;padding-top: 200px;position: absolute;}
+#contactPage{background:#292a2a;width: 100%;height: 110vh;padding-top: 200px;position: absolute;}
 .contactLogo{display:block;width:45%;float:left;text-align: center;}
 .contactData{display:block;width:50%;float:left;color: #ccc;border-left: 1px solid #ccc;padding-left: 4%;height: 300px;}
 .contTitle{font-size:1.3rem;}
 #contTitleApply{font-size:2rem;display: block;cursor: pointer;}
 
-footer{display: block;min-height: 272px;background-position: center;background-repeat: no-repeat;letter-spacing: 1.05px;background-color: #000;color:#fff;padding-top: 5%;float: left;width: 100%;}
+footer{display: block;min-height: 272px;background-position: center;background-repeat: no-repeat;letter-spacing: 1.05px;color:#fff;padding-top: 5%;float: left;width: 100%;}
 .footerLine{font-weight: 600;}
 #footerCont{padding-top: 16px;position: absolute;margin-left: auto;margin-right: auto;left: 0;
 right: 0;}
@@ -51,9 +52,6 @@ right: 0;}
 #footerMenu{width: auto;margin-top: 4%;}
 #footerMenu li{display: inline-block;width: auto;min-height: 1em;line-height: 0.8rem;margin: 6px 0;padding: 0 8px 0 9px;border: 0;border-right: 1px solid rgba(255,255,255,0.09);}
 #footerMenu li a{color:#fff;}
-.logoBackgr{background-image: url(https://lh3.googleusercontent.com/jicVqRwNPNngbGxf75GplgUD4eBF8wE404pxKcHLW18lsvMPDDkNh4-m_dbLjOmX43t88OR5S9QGf2-Jary8bDt7fooWgt303jm4ZeORBeyprU13Sx2mYYjNfJz28wWVmpw0KIfN0A5yK4UpnUiunr8lMgocSk4x3Rsf4JX-NhI3nus-ovWPCx18sbSx8r5WHBGHP4y0mcsUOGQbwLYHPwRzEx0REC1tUfIQNtdDLWoCB64uhTapqYHioHQCdKyimbVFrhpm2yPT2yZ7fEG3owTTjiokWTaUYM6LkQAzFcTgTCFoelmf1t7HuM82gR9rGAVM1PSRr_hIy-FBO-mSud5FZaPV3NjKEgcCrhRHWfmYyAGZobeALaNC4kx5lvKKK8iZsBUEpEN_GQKTFIENOUUsAkt7Ay70ycL6eQfdwqsGF0731zA68nzLwZT5au1xAeYTo2ECFzEOxy0uk0emwPSjWH6pkFqvwZ_gv4aNmz8yfmIY4lKL_hAa8gWrP4SP94LDQsk30wgAM8N54dpkdCC9Gj4wJuRCqIWLmOBZzG0jKRhCQoYI-exmBodtg88kCSY_hQyScjvNwnwpwHXdaA2JNTfOWxSSoKDhWSyrHCzECL9aeCClylWmujpWBA=w262-h250-no);width: 260px;
-height: 250px;display: block;position: absolute;opacity: 0.2;margin-left: auto;
-margin-right: auto;left: 0;right: 0;}
 
 #applyForm{display:none;transition: all 1s ease;}
 .applyFormReady{display:block !important;margin-left:auto;margin-right:auto;left:0;right:0;width:35%;height:3000px;top:-70%;position: fixed;transition: all 1s ease;}
@@ -168,7 +166,17 @@ Santa Rosa City, Laguna, Philippines
       <div class="thanksMessage">Thank you! We have received your application and will get in touch with you soon. If you have some urgent questions, please, call us.</div><div class="closeForm"><svg width="0.444in" height="0.444in">
        <image  x="0px" y="0px" width="32px" height="32px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA1VBMVEXMzMysrKzDw8PLy8u4uLi3t7e0tLTLy8vKysrBwcG7u7u1tbW3t7e8vLy/v7+/v7+0tLS0tLStra2srKzMzMzMzMzIyMjMzMzMzMzMzMytsrLMzMzMzMzPz8/Nzc3MzMzOzs7MzMzLy8vMzMzJycnDw8PMzMzS0tLMzMzMzMzOzs7GxsbMzMzMzMzMzMzMzMzKysq7u7vJycnMzMzMzMy0tLTMzMzR0dHMzMzMzMzMzMzIyMjMzMzMzMzKysrMzMzMzMzMzMzMzMzMzMzMzMzLy8v///812lFsAAAARHRSTlMAJOP+gH4x/fzapEV5uMvOX2QaHrrOHA+vmynD2xDK0RXSy+Ah4hQRzN8fEs3eHt0dphPQ3EnYFtTXGRfV1hjJ08+5wn5LQdAAAAABYktHREYXuvntAAAAB3RJTUUH4goJExgRVivigAAAAVtJREFUOMuFU3lfgzAMLSD3DnGHik7mwbwPNnHTuXks+/5fyRbaphR+M//QpI+XvDQhRJphWlCYZRqkbntQMVu7dlwW9fwgDAPfY2fXUe9bLBSgHzC/hX6bup0qZZeG2sKxqbOv1xQhh0OPB/WqezRc1uE2/M85XK6vQxqtW6qlTIXbHwzFzeHRcfEF2BISC30ncMoRozNIhFqDmJyAjM85YnQBl1eEU6TEAo8TT0rE9Q3c3vGQBxYF+SL1JKGI+wd4fBIRn9KrLWaIATy/yEBWAEIUNp0BvA7Rz3UApZBaEIApqJC3mYooU8gi5wt4/5gmCoIViTKXn7Bacy2KTNmo9QoWS6kWG2WIIr7gey479oOtlo/1uxnLYjd9fCw2T92dz80GJto1MMXI9er3bOTi8siGPmr4Hwefjb1WR2Xs/18cXL0szzO+erGW067s7lZfXmZGKtY/Vdb/D7KrSiaWhc0oAAAAAElFTkSuQmCC" /></svg></div>
   </div>
-  
+  <script>
+    $('.menuHamb').click(function() {
+       $('nav ul').slideToggle(500);
+   });
+   
+     $(window).resize(function() {		
+           if (  $(window).width() > 1360 ) {			
+               $('nav ul').removeAttr('style');
+            }
+       });
+   </script>
 
   <script>
     $("#contTitleApply").click(function() {
