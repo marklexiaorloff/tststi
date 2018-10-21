@@ -84,6 +84,23 @@ margin-right: auto;left: 0;right: 0;}
 .newsMainArea{margin-top: 10%;}
 }
 
+#actionFloat{position: fixed;width: 33px;background: #000;top: 20%;right: 4px;border-radius: 5px;z-index: 99999;opacity:0;transition:1s;}
+.actionFloatItem{text-align:center;border-bottom: 1px solid #eee;}
+.actionFloatItemEdge{text-align:center;background-image:url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiChMFNCwQfa0GAAABHUlEQVQ4y7VUPUsDQRCdzZkjpkwh+BfEPxHSCME2ZX6BWChI/AEWB4nBfyCkSx0CaYSQUqwEo0UQBG+12LdgIAkWTprjzOY+GARnmzfMe7szb9klEgT7CBAiRMC+hE8IwNEKlEgQ0n4EdUEiUPNfLBLwLIY9Ad10wRjiWTi0vQabrsibv9A7KXRzBm3O4/GKuLQvWGCKVsbuCMH4Nreos89F3MVXxGBzkzy1wG3SNFLHNLCfdkJVx//3pEDFrdSooZrkOdVp5SBDELW3oF2nuqyUEy052dNW9S1lBifrb1X1aynXd/Yw3nBphh884jBfsoMLc48vPKDFnjmyH1jaU5LHfA8DMIa4gha/OJxg9d8vLtvWrOiloFzvNr6ZNRECvbfWCZ9yAAAAAElFTkSuQmCC');background-position:center;background-repeat: no-repeat;background-size:20px;}
+.actionFloatItem svg{width:20px;height:30px;}
+.actionFloatItemEdge svg{width:34px;height:24px;}
+.actionFloatNonActive{display:none;}
+.actionFloatActive{display: inline-block;float: left;width: 275px;background:linear-gradient(to right, #cd050d, black);color: #eee;
+padding: 1%;position: absolute;height: 33px;right: 0;border-radius: 5px;line-height: 2;text-align: left;padding-left: 7px;font-weight: 600;z-index: -1;}
+.PHGInstaShareSidebar{line-height: 2.7;}
+.PHGshareSingleSvgFB{height: 24px !important;width: 24px !important;background-image:url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAcCAQAAAAQaP3JAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiCgYKFA9LBRhGAAAA1ElEQVQoz+2QMWoCURCGv3k+G8uYxS6wVQqLEEhEU3gZyQE8R+5gI15AsEuTLmEXmzQSRCttYpEiLILLjoXs7ts1ixfI38zwf8M/742QSU3YN4/a0ppRVZaSgvldMqGdD8qbPTXvreSVawoyp2KHZZAhnjmTBfhocpU5n8mg/g2HvQUwTphMO4ETKJKjJC7v+kMSjLihIb3MWesKgIWVJ24Lw774ABpVBpptJdJNNdqaWhfPeQT6goeH1xjb+x8I3ftFD7uL//pHrixA/GtnqSFfaXcEcIkwr3duh6UAAAAASUVORK5CYII=');background-position:center;background-repeat: no-repeat;background-size: contain;}
+.PHGshareSingleSvgPin{width: 20px !important;height:24px !important;background-image:url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAdCAQAAADruD9NAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiCgYLDA0m0osEAAACX0lEQVQ4y43UT0gUURzA8e97s9busqxRGYJY/iGDNkTd1ayLIXSoCDtFHjqEdCmCwjChQ4eMKKQ6hJEFQacyCCLoj1EJkWg7qx4KKkOUIjVitc0krZ1fhxl2ZzVrf5c3M+/zfvN7b948xaIYLLIKJV8tsyYZqR7J7FPum/4y4zC7KHU9GuEO7ZGvi3hf0NPOATyL38aMag53ZvBoibrPRgASPGZQJvHrEtnOJoddDh9J8YE8y2Qt8FPa1MXIbDpxdIe6RgGAnKg+73DzKfVAnJ2R/oWVDKyzXhMAfhmhymEN0QbqAaHRxsPLTX+aV42pVgBykqdAgzoOoG5HukG02f5tmkS0xTWggwkAGp57tbmarQByCcA8RDNeDHWmL5haPFEvAQgEyrVUoIF4+BWAOuYYj85N55e43eoCrfMBGFMCpp9iR8RrPrrmu8YZJtr6bg8E8OnUZ4tlLE+h3VhTWtlZNnQZEJrhi1Nvz9+4Z1SHh5gAvKX7AbAnRfJB2sbC5AEwXjWmlcV1ADnb6wOKAPhcM+SaaJNz0Q0afKeJAf5P831BygF4l8ZmLo1O5Z2gITTv28YVubU3mbMFA4CiLsPJrOUqKwB4VtO7YL/H2uSkwzr9zaGZ/mLjAnsAmDUqKocX8h6pAwQFWEyxyumYk93VT1LrbcebZbIZQDp4AegUfkudjXH/PT8i2gugHyWOBprUPkqZVu/pCt5bP5faP2kebVHngOTvlbUJlghXMaoWQA0sjTM4ZQDyELLjhYAYN7LlBqi7laP/4u5zZY4cWiFbPi43Ix/INmIHRf3P/AEJzrgQg4aq8wAAAABJRU5ErkJggg==');background-position:center;background-repeat: no-repeat;background-size: contain;}
+.PHGshareSingleSvgTwitter{width: 34px !important;background-image:url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAYCAQAAABDlVUJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiCgYKHw1G/6ChAAAB6UlEQVQ4y42Ty2tTURCHvzm5REol0SxarU98gNiFryuG0oX9A6TaRRUR4qogRYpbEYouqgur4GMvimAt7caNoi6F6L0RldIIqXShsVRQ6oOamtw7LlLDTXtN72zmnJnzzczvHI4Qwdz10rxQ7PgdjBlQ0xA66U7xWQvxOWfszQYAN+lmwIB7JHczHFLjPOA+2wGIS0/lnXvBGeOjGBBw7skpuXXg7HLQOSfXQurdiA2WtwrkXmgH6Ijff+hr3ZBJZmhahn2jwLpKpwH9BSDHY5O53rpBD4dgkGKj6U5/MkB2MdSiI+7LXF82Ud1KW7jwSnr/WxB4tcnkaQ6k5nnKpL6XLVwKAUt2E4BANhHrljs0fJSATdvbACywRtUnT3s0Tmaq3gLyMhCxG+BPVL2B2G3K0UHzpAbuKzAYmfP0eQ0E+7L0MRcJfGh/D4Dgf5GLTK+IqQ79W1qLfEqvR7jRcXuiprXqPtzV8RW52XJ/4JKqrteTEwyz0GhMyaRnA92Duddt2qXDtIZhDNh1v9YES3p79XwoVtGMveSzS7Y17nspNksXx9gVOuSUnjn4bGnQWpWoXJGe/yqb16E1V3eGaBeA3A5O61F21yku8ZjR0qPOn+EVA0fdpNnjtZi1/NCiV1xdbP/T6G3+AoAVm5Hcisn1AAAAAElFTkSuQmCC');background-position:center;background-repeat: no-repeat;}
+.PHGshareSingleSvgInsta{width: 24px !important;height: 24px !important;background-image:url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAQAAABuvaSwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiChYBHTh+Nr5+AAACB0lEQVQoz3WTTUhUURTHf2fmkSQUJLXoQwilJoO0xjeOBK5yHQUhhGC0mT4WERI1RNiHoULQzloULSJoMQQGustmpSHvvsmiIgeDIKTPmQiLdF4zp4Wjb2Yc/6t7OL97zzl/7hEASLVoXNvZgkW5cnyWZLB//xyAALg39RIWoBQq4AAC/NJzkYcg4J7UB/xlSBI6a3vl7Nt1f3YFe7SXAAftKSbrTNao00lVqbjNScs5btS80QBut1EzyhoycaPmPpgXRk3U0hCI46edTk5IhJw4OmynJKvwA5igXfZaukHQuWLRgLkrseJ5Hz2mr3Vw6kk0A/pR0I0BkZKiFyRGVmLWjnyDXMRjwByJZpazIiW+TtbJDbzCobZpAG6Zd4xyR5+K+j6uqKaNGkaKKGCPqWGr2V1qum9TCCRd6oWkgVBVWGag0FTm3B5gpir8z2FBDqfs5dg9SpgvdroqHM1IH1bhmTnrNLhN7mV9DJzxxwNL1ffuw+3GRj3FsKAAHnF7pGQmtWQe2LYUduU5nUrku6WVBXWC98KvVhqoV3Te4j1wwL8fHme8yieJQnBWXm/KfaJWOyITrCnnmCT4Sn2g+acMIDLmnp/evhpTebnT9Msj4IrtCaikhrQXC/jNYgVdy3pgkev2YHGtINVSuEoHm1c/zTee569F07ACLylpVS7sd68r70f/AXy2xgU0ZTM8AAAAAElFTkSuQmCC');background-position:center;background-repeat: no-repeat;}
+#AFIFst{background-image:url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAWCAQAAABnVgTKAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiChMFIywV/imQAAABQUlEQVQoz43SMUtbURQH8N97xuAgKiVFdHDI4qKoW6EixSWgDn4AQUo/in4IB1tcdFAhS0pVbEFpHUSwVBQplAy1UVCitDqICg4JeS95GXqmy+F3//dwuEF5xoyst75J1qA1Z5ZScnKY1OWdcgx0ysvq168UlAsGDfsp0yTpQa9tF6HfMkIvvU+QDWlX+vwN7bj1BqcJ9ANDWh2FviqaQCmB/mDauU+hM3k5nCTQL0z74iAo0+6fAceuddWhVml3soohbi3Ywk4d2fNoX0GRoLqaG+vyCjE0q8+cgAi1KHkh0FJDd1J6XENYbT3pNh8jfNBWIVFSpcZsagNTPkbtMG7sWgSrcdKIKltO7KwRvQav6pvxmdI+G62eD427aZa0XCOMxKeKkjIuG54e8b35TE3rv1Cqdrq34tFT7XJH9OOfAQy1UZ4ynXBZAAAAAElFTkSuQmCC');background-position:center;background-repeat: no-repeat;}
+#AFISnd{background-image:url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiChMFLDJoaQg8AAABV0lEQVQ4y5WUv0oDQRDGv5kLqEUKE9JcSCGK3CsIYp+AF/vYWQfyDHkNc6CgtfkDyUP4ABpIsAhskz9XpBKyNxbJeeZ2A95cs+z8vp3ZZb4j7MWyQnVU6UJcgJRMMJJecQZ7LMphsNqsJPVtws7cTSiKF6EvL8gfOGuNRmGwXfIOb8rbQRzIoxs2/1QIfekmtQ5EhLvCACBgUeYP43SBxNWTxrRXUgw4bUszN3JtNpZrA7Ss0BecdE4ewPRoSLSc5ahu4gAF1ns45DOqtgwF8myV1Cgcy6W5L1fOJnq3CMYsLrKEy5lwAEwqE69YJpkEU8Yok2DI0oP+N66lz8UZWV6cj8Uyu/RUnBEwd51PY5q+EeEktRcPX0nRPaJU8sjAIzRKameg0z61DEkKp9bWc7+2Wd3iNYNFgcJAexRYXkxTR3sxjrQxlxXyUcM5XAAKUwylv/+b+QF1W38nVk0IbQAAAABJRU5ErkJggg==');background-position:center;background-repeat: no-repeat;}
+#AFITrd{background-image:url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAQAAAChFKcoAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiChMFMxKeXSZqAAABV0lEQVQoz43SzUtUURQA8N88BhN0JyIEIYVMiCsJahVUC6GgIFJwkZsh3LkR3dbe/oCQFrlwU4r2QbmqxYC4UNCFiBYMSDJSymyUYCbQFu/Nm6830lnde+7vHDj33lQRuOqlHc+1jFQRbsvhzGW/WsEAbRZAXrF1xwBDeuS1y/jbdNohqMJxbCo5j477LFnUjTWnlivwnof4EXfJ2PbYE7/dkMMj2RBOgY8xfO9StJoxbRSTISyAOV1gWH9c0o63PhjwgMAz88jYM4JbNaO8Aht4EQ4zZhVd3vmiJ0JlKz6DPdx0P7zwNrm6XgXXlKL1Xd+wlI7qv9bBkgm9AiV3DILeVPQYu667KNbDjlcuYAcWnfmUji8iOV4brz4h+44SWbbCKrCc+G+Wvaluor9hu4n99LR2W4GFJjjrTxLcamBls/WJQHJ8d/x/8LAxka4pOI2znU4a4T93w05okBx93gAAAABJRU5ErkJggg==');background-position:center;background-repeat: no-repeat;}
+
 </style>
 <body> 
 <nav>
@@ -101,6 +118,20 @@ margin-right: auto;left: 0;right: 0;}
 <li><a href="//lagunalions.com/contacts">Contacts</a></li>
 </ul>
 </nav>
+<div id="actionFloat">
+    <div class="actionFloatItem" id="AFIFst"><a href="//lagunalions.com/member-application"><span class="actionFloatNonActive">Become Laguna Lions F.C. Player</span></a><svg></svg></div>
+     <div class="actionFloatItem" id="AFISnd"><a href="//lagunalions.com/contacts"><span class="actionFloatNonActive">Request Information</span></a><svg></svg></div>
+     <div class="actionFloatItem" id="AFITrd"><span class="actionFloatNonActive">Join Fan Community</span><svg></svg></div>
+     <div class="actionFloatItemEdge"><span class="actionFloatNonActive"><span class="PHGInstaShareSidebar"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flagunalions.com%2F&amp;src=sdkpreparse" rel="nofollow"><svg class="PHGshareSingleSvgFB"></svg></a>
+                                                        
+     <a target="_blank" href="https://www.instagram.com/p/Bov2BIjBD2x/" rel="nofollow"><svg class="PHGshareSingleSvgInsta"></svg></a>
+                                                        
+    <a href="https://twitter.com/intent/tweet?url=https://lagunalion.com/&amp;text=Laguna Lions F.C. and Football for Humanity Organization define common goals&amp;via=LagunaLions&amp;hashtags=laguna_lions_fc,football" target="_blank" rel="nofollow">
+    <svg class="PHGshareSingleSvgTwitter"></svg></a>
+                                            
+    <a href="https://pinterest.com/pin/create/button/?url=https://lagunalions.com/&amp;media=https://res.cloudinary.com/lagunalionsfc/image/upload/f_auto/v1540135331/football-for-humanity-fcll-friend.png&amp;description=Laguna Lions F.C. and Football for Humanity Organization define common goals." target="_blank" rel="nofollow">
+    <svg class="PHGshareSingleSvgPin"></svg></a></span></span><svg></svg></div>
+    </div>
 <section id="AboutPage">
   <div class="AboutLeftSidebarCont">
   <div class="AboutSidebarStaticBlock">
@@ -219,6 +250,32 @@ $(function(){
   });
 });
 </script>
-
+<script>
+    $(".actionFloatItem").hover(function() {
+           $(".actionFloatNonActive", this).addClass("actionFloatActive");
+           },
+           function(){
+               $(".actionFloatNonActive").removeClass("actionFloatActive");
+           });
+   
+            $(".actionFloatItemEdge").hover(function() {
+           $(".actionFloatNonActive", this).addClass("actionFloatActive");
+           },
+           function(){
+               $(".actionFloatNonActive").removeClass("actionFloatActive");
+           });
+   </script>
+<script>
+    $(function(){
+      $(window).scroll(function(e) {
+        if($(this).scrollTop()>350){
+          $("#actionFloat").css("opacity", "1");
+        }
+        else{
+          $("#actionFloat").css("opacity", "0");
+        }
+      });
+    });
+    </script>
 </body>
 </html>
