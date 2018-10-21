@@ -52,7 +52,7 @@ nav ul {background:linear-gradient(to bottom, #cd050d, #000 80%);display: none;z
 
 .AboutNavigation{margin-bottom: 20%;display: block;}
 .AboutLeftSidebarCont{float:left;width: 25%;height: 100vh;position:fixed;border-right: 1px solid #ccc;background: linear-gradient(to bottom, #cd050d 30%, black);color: #fff;}
-.AboutSidebarStaticBlock{bottom: 5%;position: absolute;margin-left: 12%;display: block;float: left;width: 80%;}
+.AboutSidebarStaticBlock{bottom: 5%;position: absolute;margin-left: 12%;display: block;float: left;width: 80%;top:17vh;}
 #itemTUTEN{border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;padding-bottom: 5%;
 padding-top: 6%;padding-left: 7%;font-weight: 600;}
 #itemTUTWENTY,#itemEVENTS,#itemFANNEWS{border-bottom: 1px solid #ccc;
@@ -209,7 +209,7 @@ margin-right: auto;left: 0;right: 0;}
 $(function(){
   $(window).scroll(function(e) {
     if($(this).scrollTop()>300){
-      $(".AboutLeftSidebarCont").css({"position": "relative","height": "141vh"});
+      $(".AboutLeftSidebarCont").css({"position": "relative","height": "200vh"});
       $(".fclllogoImg").css("width", "65px");
     }
     else{
