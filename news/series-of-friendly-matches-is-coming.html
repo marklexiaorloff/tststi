@@ -51,18 +51,17 @@ nav ul {background:linear-gradient(to bottom, #cd050d, #000 80%);display: none;z
 .liFirst{border-top: 2px solid white;margin-top: 1vh;}}
 
 .AboutNavigation{margin-bottom: 20%;display: block;}
-.AboutLeftSidebarCont{float:left;width: 25%;height: 100vh;position:fixed;border-right: 1px solid #ccc;background: linear-gradient(to bottom, #cd050d 30%, black);color: #fff;}
-.AboutSidebarStaticBlock{bottom: 5%;position: absolute;margin-left: 12%;display: block;float: left;width: 80%;top:17vh;}
-#itemTUTEN{border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;padding-bottom: 5%;
-padding-top: 6%;padding-left: 7%;font-weight: 600;}
-#itemTUTWENTY,#itemEVENTS,#itemFANNEWS{border-bottom: 1px solid #ccc;
+.AboutLeftSidebarCont{float:left;width: 25%;height: 100vh;position:fixed;border-right: 1px solid #ccc;background: linear-gradient(to bottom, #cd050d 30%, black);color: #fff;transition:1s;}
+.AboutSidebarStaticBlock{transition:1s;top: 16vh;position: absolute;margin-left: 12%;display: block;float: left;width: 80%;}
+#itemKITAVAILABLE,#itemFOOTBALLFUTURE,#itemOPENDAY{border-bottom: 1px solid #ccc;
 padding-bottom: 5%;margin-block-start: 0;padding-left: 7%;font-weight: 600;}
 .partnersCont{text-align:center;display:block;width:100%;}
 .partnersLogo{padding: 1%;width:auto;max-height: 36px;min-height: 36px;}
 .partnersTitle{text-align:center;text-transform:uppercase;font-size:1rem;}
 
-.AboutMainArea{height:1000px;width: 66%;float: right;margin-top: 8%;padding-right: 4%;padding-left: 4%;}
+.AboutMainArea{width: 66%;float: right;margin-top: 8%;padding-right: 4%;padding-left: 4%;height:120vh;}
 .AboutMainArea h1{font-size:2rem;}
+.SingleImgHolder{text-align: center;}
 
 footer{display: block;min-height: 272px;background-position: center;background-repeat: no-repeat;letter-spacing: 1.05px;background-color: #000;color:#fff;padding-top: 5%;float: left;width: 100%;}
 .footerLine{font-weight: 600;}
@@ -83,6 +82,7 @@ margin-right: auto;left: 0;right: 0;}
 @media(max-width:1380px){
 .newsMainArea{margin-top: 10%;}
 }
+iframe{width: 100%;height: 70vh;margin-bottom: 10%;}
 
 #actionFloat{position: fixed;width: 33px;background: #000;top: 20%;right: 4px;border-radius: 5px;z-index: 99999;opacity:0;transition:1s;}
 .actionFloatItem{text-align:center;border-bottom: 1px solid #eee;}
@@ -101,6 +101,10 @@ padding: 1%;position: absolute;height: 33px;right: 0;border-radius: 5px;line-hei
 #AFISnd{background-image:url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiChMFLDJoaQg8AAABV0lEQVQ4y5WUv0oDQRDGv5kLqEUKE9JcSCGK3CsIYp+AF/vYWQfyDHkNc6CgtfkDyUP4ABpIsAhskz9XpBKyNxbJeeZ2A95cs+z8vp3ZZb4j7MWyQnVU6UJcgJRMMJJecQZ7LMphsNqsJPVtws7cTSiKF6EvL8gfOGuNRmGwXfIOb8rbQRzIoxs2/1QIfekmtQ5EhLvCACBgUeYP43SBxNWTxrRXUgw4bUszN3JtNpZrA7Ss0BecdE4ewPRoSLSc5ahu4gAF1ns45DOqtgwF8myV1Cgcy6W5L1fOJnq3CMYsLrKEy5lwAEwqE69YJpkEU8Yok2DI0oP+N66lz8UZWV6cj8Uyu/RUnBEwd51PY5q+EeEktRcPX0nRPaJU8sjAIzRKameg0z61DEkKp9bWc7+2Wd3iNYNFgcJAexRYXkxTR3sxjrQxlxXyUcM5XAAKUwylv/+b+QF1W38nVk0IbQAAAABJRU5ErkJggg==');background-position:center;background-repeat: no-repeat;}
 #AFITrd{background-image:url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAQAAAChFKcoAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiChMFMxKeXSZqAAABV0lEQVQoz43SzUtUURQA8N88BhN0JyIEIYVMiCsJahVUC6GgIFJwkZsh3LkR3dbe/oCQFrlwU4r2QbmqxYC4UNCFiBYMSDJSymyUYCbQFu/Nm6830lnde+7vHDj33lQRuOqlHc+1jFQRbsvhzGW/WsEAbRZAXrF1xwBDeuS1y/jbdNohqMJxbCo5j477LFnUjTWnlivwnof4EXfJ2PbYE7/dkMMj2RBOgY8xfO9StJoxbRSTISyAOV1gWH9c0o63PhjwgMAz88jYM4JbNaO8Aht4EQ4zZhVd3vmiJ0JlKz6DPdx0P7zwNrm6XgXXlKL1Xd+wlI7qv9bBkgm9AiV3DILeVPQYu667KNbDjlcuYAcWnfmUji8iOV4brz4h+44SWbbCKrCc+G+Wvaluor9hu4n99LR2W4GFJjjrTxLcamBls/WJQHJ8d/x/8LAxka4pOI2znU4a4T93w05okBx93gAAAABJRU5ErkJggg==');background-position:center;background-repeat: no-repeat;}
 
+.eventDate{background: linear-gradient(to top, #cd050d, #000);width: 100px;color: #f5f5f5;font-size: 2rem;font-weight: 700;
+border-radius: 5px;text-align: center;border: 2px solid red;margin-block-start: 0;}
+.eventSnd{width:29%;float: right;}
+.singleTextCont{width:65%;float: left;}
 </style>
 <body> 
 <nav>
@@ -137,10 +141,10 @@ padding: 1%;position: absolute;height: 33px;right: 0;border-radius: 5px;line-hei
   <div class="AboutSidebarStaticBlock">
   <div class="AboutNavigation">
   <h2>Latest News</h2>
-  <a href="lagunalions.com/news/Laguna-Lions-and-Football-for-Humanity-Organization-define-common-goals"><p id="itemTUTEN">Laguna Lions F.C. and Football for Humanity Organization define common goals</p></a>
-  <p id="itemTUTWENTY"><a href="lagunalions.com/news/Is-available-now-the-official-kit-for-players-of-all-ages">Is available now the official kit for players of all ages</p>
-  <p id="itemEVENTS">It is your time to create a great football future</p>
-  <p id="itemFANNEWS">Laguna Lions F.C. open day</p>
+  <a href="//lagunalions.com/news/Is-available-now-the-official-kit-for-players-of-all-ages"><p id="itemKITAVAILABLE">Training kit for players of all ages</p></a>
+  <a href="//lagunalions.com/news/Laguna-Lions-and-Football-for-Humanity-Organization-define-common-goals"><p id="itemKITAVAILABLE">Laguna Lions F.C. and Football for Humanity Organization define common goals</p></a>
+  <p id="itemFOOTBALLFUTURE">It is your time to create a great football future</p>
+  <p id="itemOPENDAY">Laguna Lions F.C. open day</p>
   </div>
   <div class="AboutFcllFriends">
   <p class="partnersTitle">In cooperation with</p>
@@ -150,23 +154,11 @@ padding: 1%;position: absolute;height: 33px;right: 0;border-radius: 5px;line-hei
   </div>
   </div>
   <div class="AboutMainArea">
-  <h1>About Laguna Lions Football Club</h1>
-      <p>Welcome to Laguna Lions, we are a newly formed football team, however, our founders come from the original origins of football.</p>
-  
-          <p>Our C.E.O was born in the Sheffield (United Kingdom) of which the first ever football club in the world was formed, Sheffield Football club, 1886.</p>
-      
-              <p>And of which has two other world-class teams also the second and third oldest teams in the world Sheffield Wednesday and Sheffield United, both teams have gained many years of respect in world class football.</p>
-      
-                  <p>This is one of the reasons we believe that Laguna Lions has the very best of pedigree football knowledge to share the skills and performance that has true genuine origins.</p>
-      
-                      <p>Our coach is from Belgium of which he has qualifications of world class, and was a former professional football player, in Europe and United Kingdom.</p>
-      
-                          <p>We also have gained a brilliant support team to give our players the professional touch to a truly amazing sport.</p>
-      
-                              <p>The name Lions was chosen as it incorporates strength, honesty, honour, loyalty, of which has been used by monarchs around the world for hundreds of years. It is, for this reason, we chose this magnificent animal to represent our club in respect to all that believe in this philosophy.</p>
-      
-                                  <p>“Victoriam Robore” is “Victory in strength” as we believe by being as one gives strength to all to achieve their ambitious goals.</p>
-  </div>
+  <h1>Friendly match at Los Baños</h1>
+  <p>October 22, 2018</p>
+  <div class="eventSnd"><p class="eventDate">Nov 1-30</p></div>
+  <div class="singleTextCont"><p class="singleText">Laguna Lions F.C. begins the season of friendlly matches and tournaments with other football clubs of the Philippines. The club and football academy are faced with an important tasks in development of players in the skill set of playing the live game in order for each player to gain experience and confidence.</p></div>
+</div>
   </section>
 <footer>
         <span class="logoBackgr"></span>
@@ -240,7 +232,7 @@ padding: 1%;position: absolute;height: 33px;right: 0;border-radius: 5px;line-hei
 $(function(){
   $(window).scroll(function(e) {
     if($(this).scrollTop()>300){
-      $(".AboutLeftSidebarCont").css({"position": "relative","height": "200vh"});
+      $(".AboutLeftSidebarCont").css({"position": "relative","height": "240vh"});
       $(".fclllogoImg").css("width", "65px");
     }
     else{
