@@ -53,27 +53,21 @@ right: 0;}
 #footerMenu li{display: inline-block;width: auto;min-height: 1em;line-height: 0.8rem;margin: 6px 0;padding: 0 8px 0 9px;border: 0;border-right: 1px solid rgba(255,255,255,0.09);}
 #footerMenu li a{color:#fff;}
 
-#applyForm{display:none;transition: all 1s ease;}
-.applyFormReady{display:block !important;margin-left:auto;margin-right:auto;left:0;right:0;width:35%;height:3000px;top:-70%;position: fixed;transition: all 1s ease;}
-#applyFormCont{display:none;transition: all 1s ease;}
-.applyFormOverflow{background: #292a2a;width: 100%;height: 100%;display: block !important;position: fixed;top: 0;bottom: 0;z-index:2;transition: all 1s ease;}
-#applyHeader{text-align: center;margin-top: 0 !important;}
-.freebirdFormviewerViewItemsEmbeddedobjectImageWrapper{width: 200px;margin-left: auto;margin-right: auto;left: 0;right: 0;}
-.freebirdFormviewerViewNavigationNavControls{text-align: center;background: #cd050d;
-color: #fff;max-width: 100px;margin-left: auto;margin-right: auto;margin-top: 3%;
-cursor:pointer;padding-bottom: 2%;padding-top: 2%;border-radius: 5px;}
-.freebirdFormviewerViewItemsEmbeddedobjectImage{width:50px;}
-.freebirdFormviewerViewItemsItemItemTitleContainer{color:#ccc;}
-.freebirdFormviewerViewItemsItemItemTitle{font-size:0.8rem}
-#applyTitle{font-size:1.2rem;margin-bottom: 2%;}
-.quantumWizTextinputPaperinputInput{width:100%;line-height: 1.5;background: #ccc;border-radius: 5px;}
-.freebirdFormviewerViewItemsItemItemHeader{margin-top:2%}
-.quantumWizTextinputPapertextareaInput{height: 40px !important;max-height: 40px;width: 100%;max-width: 100%;background: #ccc;border-radius: 5px;}
-.freebirdFormviewerViewItemsItemErrorMessage{color: #F44336;font-size: 0.7rem;padding-top: 0.5%;}
-.thanksMessage{display: none;}
-.thanksMessageActive{display: block;position: relative;top: 50%;background: #009688;width: 50%;
-text-align: center;padding: 2%;color: #fff;margin-left: auto;margin-right: auto;left: 0;right: 0;z-index: -1;max-width: 30%;}
-.closeForm{cursor:pointer;text-align: right;margin-right: 5%;margin-top: 3vh;}
+@media(max-width:450px){
+.site-title{font-size: 1.2rem;margin-left: auto;margin-right: auto;left: 0;right: 0;width:70%;}
+nav ul{min-width:0;width: 90%;padding-inline-start: 5%;padding-inline-end: 5%;top:7%;}
+nav ul li{line-height: 2.5 !important;margin-right: 10% !important;}
+.liFirst{border-top: unset;}
+.logo{z-index: 999999;}
+.fclllogoImg{width: 7vh;max-width: 7vh;}
+#contactPage{padding-top:100px;height: auto;}
+.contactLogo{float: unset;width:100%;}
+.contactLogo svg{width: 262px;height: auto;}
+.contactData{width: 91%;text-align: center;}
+#footerSN li{margin: 0 0px;}
+.copyright{font-size: 0.7rem;}
+footer{padding-top: 25%;}
+}
 </style>
 <nav>
   <div class="resizeMenu"><a href="#" class="menuHamb" id="toggleNav">
