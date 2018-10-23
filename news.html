@@ -374,6 +374,7 @@ $(function(){
     });
     </script>
 <script>
+if ( $(window).width() < 450) {
 $(".newsFilter").click(function(){ 
 $(".newsLeftSidebarCont").show(500);
 $(".fclllogoImg").css({"width": "14vh", "max-width": "14vh"});
@@ -394,6 +395,7 @@ $(".newsLeftSidebarCont").hide(500);
 $(".fclllogoImg").removeAttr('style');
 $(".newsFilter").fadeIn(500);
 });
+}
 </script>
 </body>
 </html>
