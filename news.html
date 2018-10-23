@@ -148,12 +148,13 @@ text-align: center;padding-bottom: 0px;border-bottom-left-radius: 5px;border-bot
 .titleLogo{width: 60px;float: unset;}
 iframe{height: 32vh;}
 .newsPageSingleFeaturedFst{width: 96%;}
-.newsPageSingleFeaturedFst p{margin-top:-15%;width: 83%;padding-left: 3%;}
+.newsPageSingleFeaturedFst p{margin-top:-15%;width: 83%;padding-left: 3%;font-size: 0.9rem;}
 .newsPageSingleFeaturedSnd{width: 96%;margin-left: unset;margin-top: 5%;}
-.newsPageSingleFeaturedSnd p{margin-top: -15%;width: 83%;padding-left: 3%;}
+.newsPageSingleFeaturedSnd p{margin-top: -15%;width: 83%;padding-left: 3%;font-size: 0.9rem;}
 .newsPageSingleTitle{font-size: 1rem;}
 #newsPageNewsDate{font-size: 0.7rem;}
 .newsPageSingleWhole{width: 96%;}
+.newsPageSingleWholeNext{width: 96%;}
 .newsPageSingleThumbnail{width:32%;}
 .newsPageSingleThumbnail img{width:100%;}
 #footerSN li{margin: 0 0px;}
@@ -163,7 +164,6 @@ iframe{height: 32vh;}
 #footerMenu{width: 60%;text-align: center;margin-left: 10%;}
 footer{min-height:500px;}
 .logoBackgr{width:241px;}
-
 }
 
 </style>
@@ -345,6 +345,11 @@ $(function(){
     }
   });
 });
+$(window).resize(function() {		
+         if (  $(window).width() < 450 ) {			
+             $('.fclllogoImg').css("width", "7vh");
+          }
+     });
 </script>
 <script>
     $(".actionFloatItem").hover(function() {
