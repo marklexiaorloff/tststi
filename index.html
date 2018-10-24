@@ -407,6 +407,9 @@ footer{min-height:500px;}
 #actionFloat{width: 100%;display: none;top: 0;right:0;border-radius:unset;}
 .actionFloatItem{width: 25%;float: left;border-bottom: unset;}
 .actionFloatItemEdge{width: 25%;float: left;}
+.InstagramModalScrollCont{height:80% !important;top: 12% !important;}
+.backModalInstagram{left:2% !important;}
+.promoLine{display: none;}
 }
 
 .upcomingEvent{color: #ccc;width: 30%;padding-left: 3%;position: absolute;top: 70%;}
@@ -920,6 +923,86 @@ $("nav").removeAttr('style');
 $(".site-title").removeAttr('style');
 $("nav ul").removeAttr('style');
 });
+</script>
+
+<script>
+if ( $(window).width() < 450) {
+$("#1preview").click(function() {
+$("#1full").fadeIn();
+$(".fclllogoImg").css("width","7vh");
+$("body").css("overflow", "hidden");
+$("nav").css("position", "fixed");
+$(".site-title").css("font-size", "1.5rem");
+$("nav ul").removeAttr('style');
+$(".upcomingEvent").css("display","none");
+});
+
+$(".backModalInstagram").click(function() {
+$("#1full").fadeOut();
+$(".fclllogoImg").removeAttr('style');
+$("body").removeAttr('style');
+$("nav").removeAttr('style');
+$(".site-title").removeAttr('style');
+$(".upcomingEvent").removeAttr('style');
+});
+
+$("#2preview").click(function() {
+$("#2full").fadeIn();
+$(".fclllogoImg").css("width","7vh");
+$("body").css("overflow", "hidden");
+$("nav").css("position", "fixed");
+$(".site-title").css("font-size", "1.5rem");
+$("nav ul").removeAttr('style');
+$(".upcomingEvent").css("display","none");
+});
+
+$(".backModalInstagram").click(function() {
+$("#2full").fadeOut();
+$(".fclllogoImg").removeAttr('style');
+$("body").removeAttr('style');
+$("nav").removeAttr('style');
+$(".site-title").removeAttr('style');
+$(".upcomingEvent").removeAttr('style');
+});
+
+$("#3preview").click(function() {
+$("#3full").fadeIn();
+$(".fclllogoImg").css("width","7vh");
+$("body").css("overflow", "hidden");
+$("nav").css("position", "fixed");
+$(".site-title").css("font-size", "1.5rem");
+$("nav ul").removeAttr('style');
+$(".upcomingEvent").css("display","none");
+});
+
+$(".backModalInstagram").click(function() {
+$("#3full").fadeOut();
+$(".fclllogoImg").removeAttr('style');
+$("body").removeAttr('style');
+$("nav").removeAttr('style');
+$(".site-title").removeAttr('style');
+$(".upcomingEvent").removeAttr('style');
+});
+
+$("#4preview").click(function() {
+$("#4full").fadeIn();
+$(".fclllogoImg").css("width","7vh");
+$("body").css("overflow", "hidden");
+$("nav").css("position", "fixed");
+$(".site-title").css("font-size", "1.5rem");
+$("nav ul").removeAttr('style');
+$(".upcomingEvent").css("display","none");
+});
+
+$(".backModalInstagram").click(function() {
+$("#4full").fadeOut();
+$(".fclllogoImg").removeAttr('style');
+$("body").removeAttr('style');
+$("nav").removeAttr('style');
+$(".site-title").removeAttr('style');
+$(".upcomingEvent").removeAttr('style');
+});
+}
 </script>
 
 
