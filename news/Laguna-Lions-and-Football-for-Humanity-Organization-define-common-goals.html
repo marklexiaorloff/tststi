@@ -62,7 +62,7 @@ padding-bottom: 5%;margin-block-start: 0;padding-left: 7%;font-weight: 600;}
 .partnersLogo{padding: 1%;width:auto;max-height: 36px;min-height: 36px;}
 .partnersTitle{text-align:center;text-transform:uppercase;font-size:1rem;}
 
-.AboutMainArea{width: 66%;float: right;margin-top: 4%;padding-right: 4%;padding-left: 4%;font-size:1.1rem;}
+.AboutMainArea{height:1000px;width: 66%;float: right;margin-top: 4%;padding-right: 4%;padding-left: 4%;font-size:1.1rem;}
 .AboutMainArea h1{font-size:2rem;}
 .SingleImgHolder{text-align: center;}
 .SingleArticleDate{font-size:0.9rem;color:#444343;}
@@ -265,8 +265,8 @@ footer{min-height:500px;}
 <script>
 $(function(){
   $(window).scroll(function(e) {
-    if($(this).scrollTop()>800){
-      $(".AboutLeftSidebarCont").css({"position": "relative","height": "240vh"});
+    if($(this).scrollTop()>300){
+      $(".AboutLeftSidebarCont").css({"position": "relative","height": "200vh"});
       $(".fclllogoImg").css("width", "65px");
     }
     else{
