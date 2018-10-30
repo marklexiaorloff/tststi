@@ -8,6 +8,7 @@ module.exports = {
   "swSrc": "src/sw.js",
   "swDest": "sw.js",
   "globIgnores": [
-    "./workbox-cli-config.js"
+    "./workbox-cli-config.js",
+	"./css/amp.css"
   ]
 };
