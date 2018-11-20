@@ -1221,7 +1221,7 @@ const fetchImage = (url) => {
 }
 
 const loadImage = (image) => {
-  const src = image.dataset.src;
+  const src = image.src;
   fetchImage(src).then(() => {
     // console.log(src)
     image.src = src;
