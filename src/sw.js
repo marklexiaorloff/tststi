@@ -4,8 +4,8 @@ workbox.precaching.precacheAndRoute([]);
 
 self.addEventListener('install', event => {
   const urls = [
-    'https://cdn.ampproject.org/v0.js',
-    'https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js',
+    'https://lagunalions.com/js/v0.js',
+    'https://lagunalions.com/js/amp-install-serviceworker-0.1.js',
     'https://cdn.ampproject.org/shadow-v0.js',
     'index.html',
     '/'
