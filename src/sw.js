@@ -36,6 +36,6 @@ workbox.routing.registerRoute(/\.(?:js|css|png|gif|jpg|svg)$/,
   workbox.strategies.cacheFirst()
 );
 
-workbox.routing.registerRoute(/(.*)cdn\.ampproject\.org(.*)/,
+workbox.routing.registerRoute(/(.*)lagunalions\.com(.*)/,
   workbox.strategies.staleWhileRevalidate()
 );
