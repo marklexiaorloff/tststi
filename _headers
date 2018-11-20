@@ -1,4 +1,6 @@
 https://lagunalions.com/src/sw.js
 https://lagunalions.com/js/app.js
 https://lagunalions.com/js/embed.js
+https://lagunalions.com/js/amp-install-serviceworker-0.1.js
+https://lagunalions.com/js/v0.js
 Cache-Control: public, max-age=600 
