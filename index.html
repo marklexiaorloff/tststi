@@ -1201,43 +1201,31 @@ $(".upcomingEvent").removeAttr('style');
 </script>
 
 <script>
-let images = document.querySelectorAll('source, img');
-
-if ('IntersectionObserver' in window) {
-  // IntersectionObserver Supported
-  let config = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.5
-      };
-
-  let observer = new IntersectionObserver(onChange, config);
-  images.forEach(img => observer.observe(img));
-
-  function onChange(changes, observer) {
-    changes.forEach(change => {
-      if (change.intersectionRatio > 0) {
-        // Stop watching and load the image
-        loadImage(change.target);
-        observer.unobserve(change.target);
-      }
-    });
-  }
-
-} else {
-  // IntersectionObserver NOT Supported
-  images.forEach(image => loadImage(image));
+const images = document.querySelectorAll('img');
+const config = {
+  rootMargin: '50px 0px',
+  threshold: 0.01
+};
+let observer = new IntersectionObserver(onIntersection, config);
+  images.forEach(image => {
+    observer.observe(image);
+  });
+  function onIntersection(entries) {
+  entries.forEach(entry => {
+    if (entry.intersectionRatio > 0) {
+      observer.unobserve(entry.target);
+      preloadImage(entry.target);
+    }
+  });
 }
-
-function loadImage(image) {
-  image.classList.add('fade-in');
-  if(image.dataset && image.dataset.src) {
-    image.src = image.dataset.src;
-  }
-
-  if(image.dataset && image.dataset.srcset) {
-    image.srcset = image.dataset.srcset;
-  }
+if (!('IntersectionObserver' in window)) {
+  Array.from(images).forEach(image => preloadImage(image));
+} else {
+  observer = new IntersectionObserver(onIntersection, config);
+  images.forEach(image => {
+ 
+   observer.observe(image);
+  });
 }
 </script>
 
